@@ -4,12 +4,18 @@
     // Variables
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-family: 'Times New Roman', sans-serif;
-    line-height: 1.6rem;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
