@@ -6,6 +6,13 @@
     // default
     --default-header-height: 60px;
     --default-layout-width: 1150px;
+    --default-sidebar-width: 356px;
+
+    --primary: red;
+
+    --text-color: #000;
+
+    // Spacer
 }
 
 * {
@@ -22,4 +29,16 @@ body {
     font-family: 'Times New Roman', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+button,
+input,
+[tabIndex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
