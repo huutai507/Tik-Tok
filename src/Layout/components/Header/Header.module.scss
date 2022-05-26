@@ -1,6 +1,7 @@
 .wrapper {
     --search-border-radius: 92px;
     --search-height: 46px;
+    --search-width: 361px;
     --btn-after-top-bottom-spacer: 18px;
     --search-button-width: 52px;
 
@@ -23,12 +24,23 @@
     justify-content: space-between;
 }
 
+.search,
+.search-result {
+    width: 361px;
+}
+
+.label {
+    font-size: 1.4rem;
+    padding: 5px 12px;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+}
+
 .search {
     position: relative;
     display: flex;
     align-items: center;
 
-    width: 361px;
     height: var(--search-height);
     background: rgba(22, 24, 35, 0.06);
     border-radius: var(--search-border-radius);
@@ -56,7 +68,7 @@
         content: '';
         width: 1px;
         height: calc(var(--search-height) - var(--btn-after-top-bottom-spacer));
-        right: var(--space);
+        right: var(--spacer-1);
         background: rgba(22, 24, 35, 0.12);
         top: 50%;
         transform: translateY(-50%);
