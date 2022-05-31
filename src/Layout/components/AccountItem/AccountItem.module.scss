@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     padding: 9px 16px;
+
+    &:hover {
+        background: #eee;
+    }
 }
 
 .avatar {
@@ -18,13 +22,14 @@
 }
 
 .name {
+    display: flex;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 18px;
+    line-height: 22px;
 }
 
 .icon {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     color: var(--icon-color);
 }
@@ -32,4 +37,5 @@
 .username {
     font-size: 14px;
     font-weight: 400;
+    line-height: 20px;
 }

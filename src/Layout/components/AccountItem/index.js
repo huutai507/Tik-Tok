@@ -9,17 +9,13 @@ const cx = classNames.bind(styles);
 function AccountItem() {
     return (
         <div className={cx('wrapper')}>
-            <img
-                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/ea0854578085ab26effc2c7b8cefa270~c5_100x100.jpeg?x-expires=1653728400&x-signature=G%2BCXR%2FXJPlaw4mw5%2ByWKSw4bqUw%3D"
-                alt="username or name"
-                className={cx('avatar')}
-            />
+            <img src="https://picsum.photos/300/300" alt="username or name" className={cx('avatar')} />
             <div className={cx('info')}>
-                <p className={cx('name')}>
-                    <span>Nguyen Van A</span>
+                <div className={cx('name')}>
+                    <p>NguyenVanA</p>
                     <FontAwesomeIcon icon={faCheckCircle} className={cx('icon')} />
-                </p>
-                <span className={cx('username')}>nguyenvana</span>
+                </div>
+                <p className={cx('username')}>Nguyen Van A</p>
             </div>
         </div>
     );
