@@ -2,17 +2,12 @@
 
 :root {
     // Variables
-
-    // default
     --default-header-height: 60px;
     --default-layout-width: 1150px;
     --default-sidebar-width: 356px;
 
     --primary: rgba(254, 44, 85, 1);
-
-    --text-color: #fff;
-
-    // Spacer
+    --text-color: #000;
 }
 
 * {
@@ -26,7 +21,6 @@ html {
 }
 
 body {
-    font-family: 'Times New Roman', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -36,6 +30,7 @@ input,
 [tabIndex] {
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 a[href] {

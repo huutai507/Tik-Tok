@@ -1,7 +1,7 @@
 .wrapper {
     --search-border-radius: 92px;
     --search-height: 46px;
-    --search-width: 361px;
+    --search-width: 362px;
     --btn-after-top-bottom-spacer: 18px;
     --search-button-width: 52px;
 
@@ -96,4 +96,15 @@
         background-color: rgba(22, 24, 35, 0.03);
         cursor: pointer;
     }
+}
+
+.options {
+    margin-left: 16px;
+    padding: 8px;
+
+    background-color: transparent;
+}
+
+.icon {
+    font-size: 1.8rem;
 }
