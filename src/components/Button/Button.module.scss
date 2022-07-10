@@ -2,6 +2,7 @@
     min-width: 100px;
     font-size: 1.6rem;
     font-weight: 700;
+    font-family: 'ProximaNova', sans-serif;
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -9,7 +10,7 @@
     cursor: pointer;
 
     + .wrapper {
-        margin-left: 8px;
+        margin-left: 16px;
     }
 }
 
@@ -35,7 +36,7 @@
 }
 
 .primary {
-    color: var(--text-color);
+    color: var(--white-color);
     background: var(--primary);
     &:hover {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;

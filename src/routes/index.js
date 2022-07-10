@@ -6,7 +6,7 @@ import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 
 // layouts
-import { HeaderOnly } from '~/Layout';
+import { HeaderOnly } from '~/components/Layout';
 
 export const publicRoutes = [
     {

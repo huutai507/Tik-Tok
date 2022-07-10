@@ -1,0 +1,46 @@
+.menu-item {
+    font-size: 16px;
+    font-family: 'ProximaNova', sans-serif;
+    width: 100%;
+    display: block;
+    padding: 9px 16px;
+    background-color: transparent;
+    text-align: left;
+    font-weight: 600;
+    line-height: 24px;
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.custom-wrapper {
+    width: 224px;
+    padding-bottom: 8px;
+    background-color: #fff;
+}
+
+// Header
+.wrapper {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
