@@ -28,12 +28,24 @@ import images from '~/assets/images';
 import { Popper as PopperWrapper } from '~/components/Popper';
 import AccountItem from '~/components/Layout/components/AccountItem';
 import Menu from '~/components/Popper/Menu';
+import {
+    MessageIcon,
+    InboxIcon,
+    SearchIcon,
+    PersonalIcon,
+    CoinIcon,
+    SettingIcon,
+    LanguageIcon,
+    LogoutIcon,
+    QuestionIcon,
+    KeyboardIcon,
+} from '~/components/Icons';
 
 const cx = classNames.bind(styles);
 
 const OPTIONS_ITEM = [
     {
-        icon: <FontAwesomeIcon icon={faEarthAsia} />,
+        icon: <LanguageIcon width={'2rem'} height={'2rem'} />,
         title: 'English',
         children: {
             title: 'Language',
@@ -46,38 +58,50 @@ const OPTIONS_ITEM = [
                     code: 'en',
                     title: 'English',
                 },
+                {
+                    code: 'fr',
+                    title: 'France',
+                },
+                {
+                    code: 'i',
+                    title: 'Italy',
+                },
+                {
+                    code: 'ca',
+                    title: 'Cambodia',
+                },
             ],
         },
     },
     {
-        icon: <FontAwesomeIcon icon={faCircleQuestion} />,
+        icon: <QuestionIcon width={'2rem'} height={'2rem'} />,
         title: 'Feedback and help',
         to: '/feedback',
     },
     {
-        icon: <FontAwesomeIcon icon={faKeyboard} />,
+        icon: <KeyboardIcon width={'2rem'} height={'2rem'} />,
         title: 'Keyboard shortcut',
     },
 ];
 
 const USER_ITEMS = [
     {
-        icon: <FontAwesomeIcon icon={faKeyboard} />,
+        icon: <PersonalIcon width={'2rem'} height={'2rem'} />,
         title: 'View profile',
         to: '/@userprofile',
     },
     {
-        icon: <FontAwesomeIcon icon={faCoins} />,
+        icon: <CoinIcon width={'2rem'} height={'2rem'} />,
         title: 'Get coins',
         to: '/coins',
     },
     {
-        icon: <FontAwesomeIcon icon={faGear} />,
+        icon: <SettingIcon width={'2rem'} height={'2rem'} />,
         title: 'Setting',
     },
     ...OPTIONS_ITEM,
     {
-        icon: <FontAwesomeIcon icon={faSignOut} />,
+        icon: <LogoutIcon width={'2rem'} height={'2rem'} />,
         title: 'Log Out',
         separate: true,
     },
@@ -118,7 +142,7 @@ function Header() {
                         <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />
 
                         <button className={cx('search-btn')}>
-                            <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            <SearchIcon width={'2.4rem'} height={'2.4rem'} color={'rgba(22, 24, 35, 0.34)'} />
                         </button>
                     </div>
                 </TippyHeadless>
@@ -131,12 +155,12 @@ function Header() {
                         <>
                             <Tippy content="Message" delay={[0, 200]} placement="bottom">
                                 <button className={cx('login-actions')}>
-                                    <FontAwesomeIcon className={cx('icon')} icon={faPaperPlane} />
+                                    <MessageIcon width={'2.6rem'} height={'2.6rem'} />
                                 </button>
                             </Tippy>
                             <Tippy content="Inbox" delay={[0, 200]} placement="bottom">
                                 <button className={cx('login-actions')}>
-                                    <FontAwesomeIcon className={cx('icon')} icon={faMessage} />
+                                    <InboxIcon />
                                 </button>
                             </Tippy>
                         </>

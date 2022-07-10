@@ -2,13 +2,14 @@
     font-size: 16px;
     font-family: 'ProximaNova', sans-serif;
     width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 9px 16px;
     background-color: transparent;
     text-align: left;
     font-weight: 600;
     line-height: 24px;
-
+    cursor: pointer;
     &.separate {
         border-top: 1px solid rgba(22, 24, 35, 0.12);
     }
